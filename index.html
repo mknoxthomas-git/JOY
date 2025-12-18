@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quick Actions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --primary: #38bdf8;
+      --secondary: #22c55e;
+      --accent: #f59e0b;
+      --text: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+    }
+
+    .container {
+      background: var(--card);
+      padding: 40px;
+      border-radius: 18px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+      letter-spacing: 0.5px;
+    }
+
+    .buttons {
+      display: grid;
+      gap: 18px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 20px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #020617;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .btn-board {
+      background: linear-gradient(135deg, var(--primary), #7dd3fc);
+    }
+
+    .btn-tags {
+      background: linear-gradient(135deg, var(--secondary), #86efac);
+    }
+
+    .btn-posts {
+      background: linear-gradient(135deg, var(--accent), #fde68a);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Quick Actions</h1>
+
+    <div class="buttons">
+      <a class="btn btn-board" href="https://n8n.vprimegains.com/form/1f91a273-c881-4052-ac2c-a443b2b46cd2" target="_blank">
+        New Board
+      </a>
+
+      <a class="btn btn-tags" href="https://n8n.vprimegains.com/form/a5c28ee2-bd7e-41d2-a5e8-5f01e06084a2" target="_blank">
+        New Tags
+      </a>
+
+      <a class="btn btn-posts" href="https://n8n.vprimegains.com/form/301eecb4-62ad-4268-a9f0-866c860ee84c" target="_blank">
+        New Posts
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
